@@ -9,7 +9,33 @@ const snackButtons = document.querySelectorAll(".snack-button");
 // const coins = document.querySelector(".coins-container");
 const form = document.querySelector(".two form");
 const bank = document.querySelector(".coins-container");
+const bulb = document.querySelector(".bulb");
+const on = document.querySelector(".on-btn");
+const off = document.querySelector(".off-btn");
+const toggle = document.querySelector(".toggle-btn");
+const end = document.querySelector(".end-btn");
+
 let total = 0;
+
+on.addEventListener("click", () => {
+  bulb.classList.add("on");
+});
+
+off.addEventListener("click", () => {
+  bulb.classList.remove("on");
+});
+
+toggle.addEventListener("click", () => {
+  bulb.classList.toggle("on");
+});
+
+end.addEventListener("click", () => {
+  bulb.remove();
+  on.disabled = true;
+  off.disabled = true;
+  toggle.disabled = true;
+  end.disabled = true;
+});
 
 // limeButton.addEventListener("click", (e) => {
 //   //e.preventDefault(); not necessary because this is only for form submissions
