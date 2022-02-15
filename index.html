@@ -10,6 +10,36 @@
 </head>
 
 <body>
+    <header>
+        <h1>DOM Mini Challenges</h1>
+    </header>
+    <main>
+        <div class="one">
+            <p class="total">Total: $0.00</p>
+            <button class="snack-button" data-cost="2">Lime Cola $2.00</button>
+            <button class="snack-button" data-cost="3">Salted Peanuts $3.00</button>
+            <button class="snack-button" data-cost="4">Chocolate Bar $4.00</button>
+            <button class="snack-button" data-cost="6">Fruit Gummies $6.00</button>
+        </div>
+        <div class="two">
+            <form class="money-form">
+                <label for="numberCoins">How many?</label>
+                <input type="number" name="numberCoins" id="numberCoins">
+                <label for="whichCoin">What coin?</label>
+                <select list="whichCoin" name="whichCoin" id="which-coin">
+
+                    <option value="penny">penny</option>
+                    <option data-coin="nickel" value="nickel">nickel</option>
+                    <option data-coin="dime" value="dime">dime</option>
+                    <option data-coin="quarter" value="quarter">quarter</option>
+                </select>
+                <button>Make Money!</button>
+            </form>
+            <div class="coins-container"></div>
+        </div>
+    </main>
+
+
     <script src="script.js"></script>
 </body>
 
